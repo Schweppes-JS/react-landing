@@ -1,0 +1,46 @@
+@import '../../../styles/variable';
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+
+    &__list {
+        display: flex;
+        gap: 64px;
+        margin: 40px 0;
+    }
+
+    &__list-item {
+        list-style: none;
+        text-transform: uppercase;
+    }
+    
+    &__select-block {
+        border: none;
+        background-color: transparent;
+        outline: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $translucent-black;
+        font-weight: 700;
+    }
+
+    &__active-link {
+        color: $black;
+    }
+
+    &__select-block {
+        font-weight: 700;
+    }
+
+    option {
+        color: $translucent-black;
+        font-weight: 700;
+    }
+
+    option:checked {
+        display: none;
+    }
+}
