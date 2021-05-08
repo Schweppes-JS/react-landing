@@ -3,6 +3,7 @@ const SET_CATEGORIES_FAILURE = 'SET_CATEGORIES_FAILURE'
 const SET_CURRENT_CATEGORY = 'SET_CURRENT_CATEGORY'
 const SET_MORE_ITEMS_SUCCESS = 'SET_MORE_ITEMS_SUCCESS'
 const SET_MORE_ITEMS_FAILURE = 'SET_MORE_ITEMS_FAILURE'
+const SET_UPLOAD_AMOUNT = 'SET_UPLOAD_AMOUNT'
 const SET_LANGUAGE = 'SET_LANGUAGE'
 
 const initialState = {
@@ -10,6 +11,7 @@ const initialState = {
     currentCategory: null,
     language: 'UA',
     isLoading: true,
+    uploadAmount: {},
     backendError: ''
 }
 
@@ -33,7 +35,6 @@ export default function primaryPageReducer(state = initialState, action) {
                 currentCategory: action.payload
             }
         case SET_MORE_ITEMS_SUCCESS:
-            console.log(action)
             return {
                 ...state,
                 isLoading: false,
@@ -55,6 +56,15 @@ export default function primaryPageReducer(state = initialState, action) {
                 isLoading: false,
                 backendError: action.payload
             }
+        case SET_UPLOAD_AMOUNT:
+            return {
+                ...state,
+                uploadAmount: {
+                    ...state.uploadAmount,
+                    [action.payload]:
+                        state.uploadAmount[action.payload] ? state.uploadAmount[action.payload] + 1 : 2
+                }
+            }
         case SET_LANGUAGE:
             return {
                 ...state,
@@ -70,4 +80,5 @@ export const setCategoriesFailure = () => ({type: SET_CATEGORIES_FAILURE})
 export const setCurrentCategory = (category) => ({type: SET_CURRENT_CATEGORY, payload: category})
 export const setMoreItemsSuccess = (index, items) => ({type: SET_MORE_ITEMS_SUCCESS, payload: {index, items}})
 export const setMoreItemsFailure = () => ({type: SET_MORE_ITEMS_FAILURE})
+export const setUploadAmount = (currentCategory) => ({type: SET_UPLOAD_AMOUNT, payload: currentCategory})
 export const setLanguage = (language) => ({type: SET_LANGUAGE, payload: language})

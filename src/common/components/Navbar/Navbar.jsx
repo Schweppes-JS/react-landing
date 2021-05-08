@@ -4,9 +4,12 @@ import { NavLink } from 'react-router-dom'
 import { setLanguage } from '../../../pages/primary/reducers/primaryPageReducer'
 import { useLocation }from "react-router-dom"
 import './Navbar.scss'
+import { useTranslation } from 'react-i18next'
+import { translator } from '../../../common/services/translationService'
 
 const Navbar = () => {
 
+    const { t } = useTranslation()
     const dispatch = useDispatch()
     const { pathname } = useLocation()
     useEffect(() => {
@@ -24,6 +27,7 @@ const Navbar = () => {
     const language = useSelector(state => state.primaryPage.language)
 
     const onLanguageChange = (event) => {
+        translator.changeLanguage(event.target.value)
         dispatch(setLanguage(event.target.value))
     }
 
@@ -34,10 +38,9 @@ const Navbar = () => {
                                                 <NavLink className="navbar__link" activeClassName='navbar__active-link'
                                                     isActive={(match,location) => location.pathname.includes(category.url)}
                                                     to={`/${category.url}`}>
-                                                    {category.title}
+                                                    {t(category.title)}
                                                 </NavLink>
-                                            </li>)
-                }
+                                            </li>)}
                 <select className="navbar__select-block" value={language} onChange={onLanguageChange}>
                     <option>UA</option>
                     <option>RU</option>

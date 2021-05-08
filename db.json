@@ -181,7 +181,7 @@
         {
           "id": 1,
           "shortInfo": {
-            "header": "Atlas Building",
+            "header": "Ella Logistics Center",
             "architect": "Alison Brooks",
             "address": "11 Stable Street, KingCross",
             "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
@@ -195,7 +195,7 @@
         {
           "id": 2,
           "shortInfo": {
-            "header": "Atlas Building",
+            "header": "Ella Logistics Center",
             "architect": "Alison Brooks",
             "address": "11 Stable Street, KingCross",
             "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
@@ -209,7 +209,7 @@
         {
           "id": 3,
           "shortInfo": {
-            "header": "Atlas Building",
+            "header": "Ella Logistics Center",
             "architect": "Alison Brooks",
             "address": "11 Stable Street, KingCross",
             "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
@@ -223,7 +223,7 @@
         {
           "id": 4,
           "shortInfo": {
-            "header": "Atlas Building",
+            "header": "Ella Logistics Center",
             "architect": "Alison Brooks",
             "address": "11 Stable Street, KingCross",
             "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
@@ -237,7 +237,7 @@
         {
           "id": 5,
           "shortInfo": {
-            "header": "Atlas Building",
+            "header": "Ella Logistics Center",
             "architect": "Alison Brooks",
             "address": "11 Stable Street, KingCross",
             "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
@@ -251,7 +251,7 @@
         {
           "id": 6,
           "shortInfo": {
-            "header": "Atlas Building",
+            "header": "Ella Logistics Center",
             "architect": "Alison Brooks",
             "address": "11 Stable Street, KingCross",
             "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
@@ -265,7 +265,7 @@
         {
           "id": 7,
           "shortInfo": {
-            "header": "Atlas Building",
+            "header": "Ella Logistics Center",
             "architect": "Alison Brooks",
             "address": "11 Stable Street, KingCross",
             "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
@@ -279,7 +279,7 @@
         {
           "id": 8,
           "shortInfo": {
-            "header": "Atlas Building",
+            "header": "Ella Logistics Center",
             "architect": "Alison Brooks",
             "address": "11 Stable Street, KingCross",
             "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
@@ -293,7 +293,7 @@
         {
           "id": 9,
           "shortInfo": {
-            "header": "Atlas Building",
+            "header": "Ella Logistics Center",
             "architect": "Alison Brooks",
             "address": "11 Stable Street, KingCross",
             "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
@@ -307,7 +307,7 @@
         {
           "id": 10,
           "shortInfo": {
-            "header": "Atlas Building",
+            "header": "Ella Logistics Center",
             "architect": "Alison Brooks",
             "address": "11 Stable Street, KingCross",
             "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
@@ -321,7 +321,7 @@
         {
           "id": 11,
           "shortInfo": {
-            "header": "Atlas Building",
+            "header": "Ella Logistics Center",
             "architect": "Alison Brooks",
             "address": "11 Stable Street, KingCross",
             "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
@@ -335,7 +335,7 @@
         {
           "id": 12,
           "shortInfo": {
-            "header": "Atlas Building",
+            "header": "Ella Logistics Center",
             "architect": "Alison Brooks",
             "address": "11 Stable Street, KingCross",
             "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
@@ -353,7 +353,7 @@
       "url": "business-center",
       "content": [
         {
-          "id": 25,
+          "id": 1,
           "shortInfo": {
             "header": "Atlas Building",
             "architect": "Alison Brooks",
@@ -367,7 +367,7 @@
           } 
         },
         {
-          "id": 26,
+          "id": 2,
           "shortInfo": {
             "header": "Atlas Building",
             "architect": "Alison Brooks",
@@ -381,7 +381,7 @@
           } 
         },
         {
-          "id": 27,
+          "id": 3,
           "shortInfo": {
             "header": "Atlas Building",
             "architect": "Alison Brooks",
@@ -395,7 +395,7 @@
           } 
         },
         {
-          "id": 28,
+          "id": 4,
           "shortInfo": {
             "header": "Atlas Building",
             "architect": "Alison Brooks",
@@ -409,7 +409,7 @@
           } 
         },
         {
-          "id": 29,
+          "id": 5,
           "shortInfo": {
             "header": "Atlas Building",
             "architect": "Alison Brooks",
@@ -423,7 +423,7 @@
           } 
         },
         {
-          "id": 30,
+          "id": 6,
           "shortInfo": {
             "header": "Atlas Building",
             "architect": "Alison Brooks",
@@ -437,7 +437,7 @@
           } 
         },
         {
-          "id": 31,
+          "id": 7,
           "shortInfo": {
             "header": "Atlas Building",
             "architect": "Alison Brooks",
@@ -451,7 +451,7 @@
           } 
         },
         {
-          "id": 32,
+          "id": 8,
           "shortInfo": {
             "header": "Atlas Building",
             "architect": "Alison Brooks",
@@ -465,7 +465,7 @@
           } 
         },
         {
-          "id": 33,
+          "id": 9,
           "shortInfo": {
             "header": "Atlas Building",
             "architect": "Alison Brooks",
@@ -479,7 +479,7 @@
           } 
         },
         {
-          "id": 34,
+          "id": 10,
           "shortInfo": {
             "header": "Atlas Building",
             "architect": "Alison Brooks",
@@ -493,7 +493,7 @@
           } 
         },
         {
-          "id": 35,
+          "id": 11,
           "shortInfo": {
             "header": "Atlas Building",
             "architect": "Alison Brooks",
@@ -507,7 +507,7 @@
           } 
         },
         {
-          "id": 36,
+          "id": 12,
           "shortInfo": {
             "header": "Atlas Building",
             "architect": "Alison Brooks",
@@ -527,7 +527,7 @@
       "url": "shopping-center",
       "content": [
         {
-          "id": 37,
+          "id": 1,
           "shortInfo": {
             "header": "Burlington",
             "architect": "Alison Brooks",
@@ -541,7 +541,7 @@
           } 
         },
         {
-          "id": 38,
+          "id": 2,
           "shortInfo": {
             "header": "Burlington",
             "architect": "Alison Brooks",
@@ -555,7 +555,7 @@
           } 
         },
         {
-          "id": 39,
+          "id": 3,
           "shortInfo": {
             "header": "Burlington",
             "architect": "Alison Brooks",
@@ -569,7 +569,7 @@
           } 
         },
         {
-          "id": 40,
+          "id": 4,
           "shortInfo": {
             "header": "Burlington",
             "architect": "Alison Brooks",
@@ -583,7 +583,7 @@
           } 
         },
         {
-          "id": 41,
+          "id": 5,
           "shortInfo": {
             "header": "Burlington",
             "architect": "Alison Brooks",
@@ -597,7 +597,7 @@
           } 
         },
         {
-          "id": 42,
+          "id": 6,
           "shortInfo": {
             "header": "Burlington",
             "architect": "Alison Brooks",
@@ -611,7 +611,7 @@
           } 
         },
         {
-          "id": 43,
+          "id": 7,
           "shortInfo": {
             "header": "Burlington",
             "architect": "Alison Brooks",
@@ -625,7 +625,7 @@
           } 
         },
         {
-          "id": 44,
+          "id": 8,
           "shortInfo": {
             "header": "Burlington",
             "architect": "Alison Brooks",
@@ -639,7 +639,7 @@
           } 
         },
         {
-          "id": 45,
+          "id": 9,
           "shortInfo": {
             "header": "Burlington",
             "architect": "Alison Brooks",
@@ -653,7 +653,7 @@
           } 
         },
         {
-          "id": 46,
+          "id": 10,
           "shortInfo": {
             "header": "Burlington",
             "architect": "Alison Brooks",
@@ -667,7 +667,7 @@
           } 
         },
         {
-          "id": 47,
+          "id": 11,
           "shortInfo": {
             "header": "Burlington",
             "architect": "Alison Brooks",
@@ -681,7 +681,7 @@
           } 
         },
         {
-          "id": 48,
+          "id": 12,
           "shortInfo": {
             "header": "Burlington",
             "architect": "Alison Brooks",
@@ -699,7 +699,7 @@
   ],
   "living-complex": [
     {
-      "id": 49,
+      "id": 13,
       "shortInfo": {
         "header": "residental complex",
         "architect": "Alison Brooks",
@@ -713,7 +713,7 @@
       }
     },
     {
-      "id": 50,
+      "id": 14,
       "shortInfo": {
         "header": "residental complex",
         "architect": "Alison Brooks",
@@ -727,7 +727,7 @@
       }
     },
     {
-      "id": 51,
+      "id": 15,
       "shortInfo": {
         "header": "residental complex",
         "architect": "Alison Brooks",
@@ -739,6 +739,642 @@
           "year": 2021
         }
       }
+    },
+    {
+      "id": 16,
+      "shortInfo": {
+        "header": "residental complex",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://www.arch2o.com/wp-content/uploads/2020/09/Arch2O-charlie-living-residential-complex-graft-27.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 3,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 17,
+      "shortInfo": {
+        "header": "residental complex",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://www.arch2o.com/wp-content/uploads/2020/09/Arch2O-charlie-living-residential-complex-graft-27.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 3,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 18,
+      "shortInfo": {
+        "header": "residental complex",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://www.arch2o.com/wp-content/uploads/2020/09/Arch2O-charlie-living-residential-complex-graft-27.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 3,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 19,
+      "shortInfo": {
+        "header": "residental complex",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://www.arch2o.com/wp-content/uploads/2020/09/Arch2O-charlie-living-residential-complex-graft-27.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 3,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 20,
+      "shortInfo": {
+        "header": "residental complex",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://www.arch2o.com/wp-content/uploads/2020/09/Arch2O-charlie-living-residential-complex-graft-27.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 3,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 21,
+      "shortInfo": {
+        "header": "residental complex",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://www.arch2o.com/wp-content/uploads/2020/09/Arch2O-charlie-living-residential-complex-graft-27.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 3,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 22,
+      "shortInfo": {
+        "header": "residental complex",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://www.arch2o.com/wp-content/uploads/2020/09/Arch2O-charlie-living-residential-complex-graft-27.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 3,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 23,
+      "shortInfo": {
+        "header": "residental complex",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://www.arch2o.com/wp-content/uploads/2020/09/Arch2O-charlie-living-residential-complex-graft-27.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 3,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 24,
+      "shortInfo": {
+        "header": "residental complex",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://www.arch2o.com/wp-content/uploads/2020/09/Arch2O-charlie-living-residential-complex-graft-27.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 3,
+          "year": 2021
+        }
+      }
+    }
+  ],
+  "commerce": [
+    {
+      "id": 13,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2022
+        }
+      } 
+    },
+    {
+      "id": 14,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2022
+        }
+      } 
+    },
+    {
+      "id": 15,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2022
+        }
+      } 
+    },
+    {
+      "id": 16,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2022
+        }
+      } 
+    },
+    {
+      "id": 17,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2022
+        }
+      } 
+    },
+    {
+      "id": 18,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2022
+        }
+      } 
+    },
+    {
+      "id": 19,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2022
+        }
+      } 
+    },
+    {
+      "id": 20,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2022
+        }
+      } 
+    },
+    {
+      "id": 21,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2022
+        }
+      } 
+    },
+    {
+      "id": 22,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2022
+        }
+      } 
+    },
+    {
+      "id": 23,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2022
+        }
+      } 
+    },
+    {
+      "id": 24,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2022
+        }
+      } 
+    }
+  ],
+  "business-center": [
+    {
+      "id": 13,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://files.proact-group.com/images/uploads/0309_0000_1565854717.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 2,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 14,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://files.proact-group.com/images/uploads/0309_0000_1565854717.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 2,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 15,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://files.proact-group.com/images/uploads/0309_0000_1565854717.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 2,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 16,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://files.proact-group.com/images/uploads/0309_0000_1565854717.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 2,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 17,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://files.proact-group.com/images/uploads/0309_0000_1565854717.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 2,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 18,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://files.proact-group.com/images/uploads/0309_0000_1565854717.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 2,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 19,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://files.proact-group.com/images/uploads/0309_0000_1565854717.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 2,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 20,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://files.proact-group.com/images/uploads/0309_0000_1565854717.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 2,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 21,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://files.proact-group.com/images/uploads/0309_0000_1565854717.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 2,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 22,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://files.proact-group.com/images/uploads/0309_0000_1565854717.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 2,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 23,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://files.proact-group.com/images/uploads/0309_0000_1565854717.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 2,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 24,
+      "shortInfo": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://files.proact-group.com/images/uploads/0309_0000_1565854717.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 2,
+          "year": 2021
+        }
+      }
+    }
+  ],
+  "shopping-center": [
+    {
+      "id": 13,
+      "shortInfo": {
+        "header": "Burlington",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://content.fortune.com/wp-content/uploads/2019/11/Burlington-Mall-Massachusetts-Rendering.jpg",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2023
+        }
+      } 
+    },
+    {
+      "id": 14,
+      "shortInfo": {
+        "header": "Burlington",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://content.fortune.com/wp-content/uploads/2019/11/Burlington-Mall-Massachusetts-Rendering.jpg",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2023
+        }
+      } 
+    },
+    {
+      "id": 15,
+      "shortInfo": {
+        "header": "Burlington",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://content.fortune.com/wp-content/uploads/2019/11/Burlington-Mall-Massachusetts-Rendering.jpg",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2023
+        }
+      } 
+    },
+    {
+      "id": 16,
+      "shortInfo": {
+        "header": "Burlington",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://content.fortune.com/wp-content/uploads/2019/11/Burlington-Mall-Massachusetts-Rendering.jpg",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2023
+        }
+      } 
+    },
+    {
+      "id": 17,
+      "shortInfo": {
+        "header": "Burlington",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://content.fortune.com/wp-content/uploads/2019/11/Burlington-Mall-Massachusetts-Rendering.jpg",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2023
+        }
+      } 
+    },
+    {
+      "id": 18,
+      "shortInfo": {
+        "header": "Burlington",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://content.fortune.com/wp-content/uploads/2019/11/Burlington-Mall-Massachusetts-Rendering.jpg",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2023
+        }
+      } 
+    },
+    {
+      "id": 19,
+      "shortInfo": {
+        "header": "Burlington",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://content.fortune.com/wp-content/uploads/2019/11/Burlington-Mall-Massachusetts-Rendering.jpg",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2023
+        }
+      } 
+    },
+    {
+      "id": 20,
+      "shortInfo": {
+        "header": "Burlington",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://content.fortune.com/wp-content/uploads/2019/11/Burlington-Mall-Massachusetts-Rendering.jpg",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2023
+        }
+      } 
+    },
+    {
+      "id": 21,
+      "shortInfo": {
+        "header": "Burlington",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://content.fortune.com/wp-content/uploads/2019/11/Burlington-Mall-Massachusetts-Rendering.jpg",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2023
+        }
+      } 
+    },
+    {
+      "id": 22,
+      "shortInfo": {
+        "header": "Burlington",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://content.fortune.com/wp-content/uploads/2019/11/Burlington-Mall-Massachusetts-Rendering.jpg",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2023
+        }
+      } 
+    },
+    {
+      "id": 23,
+      "shortInfo": {
+        "header": "Burlington",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://content.fortune.com/wp-content/uploads/2019/11/Burlington-Mall-Massachusetts-Rendering.jpg",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2023
+        }
+      } 
+    },
+    {
+      "id": 24,
+      "shortInfo": {
+        "header": "Burlington",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://content.fortune.com/wp-content/uploads/2019/11/Burlington-Mall-Massachusetts-Rendering.jpg",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2023
+        }
+      } 
     }
   ]
 }

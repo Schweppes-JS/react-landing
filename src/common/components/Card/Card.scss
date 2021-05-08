@@ -62,12 +62,15 @@
         width: 100%;
         justify-content: space-between;
         font-weight: 600;
-        transform: translateX(100%);
-        opacity: 0;
 
         & span:first-child {
             text-transform: uppercase;
         }
+    }
+
+    &__short-info {
+        transform: translateX(100%);
+        opacity: 0;
     }
 
     &__architect {
