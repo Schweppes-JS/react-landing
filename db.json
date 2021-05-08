@@ -696,5 +696,49 @@
         }
       ]
     }
+  ],
+  "living-complex": [
+    {
+      "id": 49,
+      "shortInfo": {
+        "header": "residental complex",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://www.arch2o.com/wp-content/uploads/2020/09/Arch2O-charlie-living-residential-complex-graft-27.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 3,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 50,
+      "shortInfo": {
+        "header": "residental complex",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://www.arch2o.com/wp-content/uploads/2020/09/Arch2O-charlie-living-residential-complex-graft-27.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 3,
+          "year": 2021
+        }
+      }
+    },
+    {
+      "id": 51,
+      "shortInfo": {
+        "header": "residental complex",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://www.arch2o.com/wp-content/uploads/2020/09/Arch2O-charlie-living-residential-complex-graft-27.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 3,
+          "year": 2021
+        }
+      }
+    }
   ]
 }

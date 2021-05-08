@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
 import Card from '../../../../common/components/Card/Card'
+import { setCurrentCategory } from '../../reducers/primaryPageReducer';
 
 const Content = ({category}) => {
+
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(setCurrentCategory(category.url))
+    }, [])
 
     return (
         <>
