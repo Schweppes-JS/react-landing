@@ -1,7 +1,6 @@
 import axios from 'axios'
 import { setCategoriesFailure, setCategoriesSuccess } from '../reducers/primaryPageReducer'
 
-
 export const fetchCategories = () => {
     return async (dispatch) => {
         try {

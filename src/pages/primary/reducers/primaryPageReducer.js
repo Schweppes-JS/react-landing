@@ -23,6 +23,18 @@ export default function primaryPageReducer(state = initialState, action) {
                 isLoading: false,
                 backendError: action.payload
             }
+        case SET_MORE_ITEMS_SUCCESS:
+            return {
+                ...state,
+                isLoading: false,
+                categories: action.payload
+            }
+        case SET_MORE_ITEMS_FAILURE:
+            return {
+                ...state,
+                isLoading: false,
+                backendError: action.payload
+            }
         case SET_LANGUAGE:
             return {
                 ...state,

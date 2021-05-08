@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Route, Switch, Redirect } from 'react-router-dom'
 import ErrorPage from '../../../common/components/ErrorPage/ErrorPage.jsx'
 import Loader from '../../../common/components/Loader/Loader.jsx'
+import Uploader from './Uploader/Uploader'
 import SecondaryPage from '../../secondary/components/SecondaryPage'
 import './PrimaryPage.scss'
 import Navbar from '../../../common/components/Navbar/Navbar.jsx'
@@ -16,8 +17,8 @@ const PrimaryPage = () => {
         dispatch(fetchCategories())
     }, [])
 
-    const isLoading = useSelector(state => state.primaryPage.isLoading);
-    const categories = useSelector(state => state.primaryPage.categories);
+    const isLoading = useSelector(state => state.primaryPage.isLoading)
+    const categories = useSelector(state => state.primaryPage.categories)
 
     return (
         <>
@@ -39,6 +40,7 @@ const PrimaryPage = () => {
                             <Route path='*' render={() => <ErrorPage />}/>
                         </Switch>
                     </div>
+                    <Uploader />
                 </div>
             }
         </>

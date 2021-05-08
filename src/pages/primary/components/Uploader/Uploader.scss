@@ -1,0 +1,30 @@
+.uploader {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 30px 0;
+    
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background-color: #474787;
+        transition: .3s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(.95) rotate(120deg);
+        }
+    }
+
+    &__text {
+        margin-left: 20px;
+    }
+}
