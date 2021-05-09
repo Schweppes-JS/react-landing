@@ -10,9 +10,11 @@ import { BrowserRouter } from 'react-router-dom'
 
 import App from './App.jsx'
 import primaryPageReducer from './pages/primary/reducers/primaryPageReducer'
+import secondaryPageReducer from './pages/secondary/reducers/secondaryPageReducer'
 
 const rootReducer = combineReducers({
-    primaryPage: primaryPageReducer
+    primaryPage: primaryPageReducer,
+    secondaryPage: secondaryPageReducer
 })
 
 export const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)))

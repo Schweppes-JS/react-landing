@@ -1,7 +1,7 @@
 .slideOutDown {
     animation-name: slideOutDown;
     animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     animation-timing-function: ease-in-out;
     transform: translateY(-100%);
     opacity: 0;
@@ -21,7 +21,7 @@
 .slideOutUp {
     animation-name: slideOutUp;
     animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     animation-timing-function: ease-in-out;
     transform: translateY(100%);
     opacity: 0;
@@ -38,10 +38,28 @@
     }
 }
 
+  
+.slideBackDown {
+    animation-name: slideBackDown;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slideBackDown {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
 .slideOutLeft {
     animation-name: slideOutLeft;
     animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     animation-timing-function: ease-in-out;
     transform: translateX(100%);
     opacity: 0;
@@ -58,24 +76,28 @@
     }
 }
 
-.slideOutRight {
-    animation-name: slideOutRight;
+.slideBackRight {
+    animation-name: slideBackRight;
+    animation-fill-mode: both;
     animation-duration: 1s;
-    animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
-    transform: translateX(-100%);
-    opacity: 0;
+    transform: translateX(0);
+    opacity: 1;
 }
 
-@keyframes slideOutRight {
+@keyframes slideBackRight {
     0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
         transform: translateX(0);
         opacity: 1;
     }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.scaling {
+    
 }
 
 .delay00 {

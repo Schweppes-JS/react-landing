@@ -17,7 +17,8 @@ const translationsEn = {
     'Ella Logistics Center': 'Ella Logistics Center',
     '11 Stable Street, KingCross': '11 Stable Street, KingCross',
     'Atlas Building': 'Atlas Building',
-    'Burlington': 'Burlington'
+    'Burlington': 'Burlington',
+    'residental-complex': 'residental-complex'
 }
 
 const translationsUa = {
@@ -36,7 +37,8 @@ const translationsUa = {
     'Ella Logistics Center': 'Логістичний центр Елла',
     '11 Stable Street, KingCross': 'вул. Стейбл 11, Кінгс Крос',
     'Atlas Building': 'АТЛАС',
-    'Burlington': 'БЕРЛІНГТОН'
+    'Burlington': 'БЕРЛІНГТОН',
+    'residental-complex': 'rezydenciya'
 }
 
 const translationsRu = {
@@ -55,7 +57,8 @@ const translationsRu = {
     'Ella Logistics Center': 'Логистический центр Элла',
     '11 Stable Street, KingCross': 'ул. Стейбл 11, Кингс Крос',
     'Atlas Building': 'АТЛАС',
-    'Burlington': 'БЕРЛИНГТОН'
+    'Burlington': 'БЕРЛИНГТОН',
+    'residental-complex': 'rezidenncija'
 }
 
 i18n

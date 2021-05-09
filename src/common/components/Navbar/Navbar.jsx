@@ -12,6 +12,10 @@ const Navbar = () => {
     const { t } = useTranslation()
     const dispatch = useDispatch()
     const { pathname } = useLocation()
+    const currentLanguage = useSelector(state => state.primaryPage.language)
+    const categories = useSelector(state => state.primaryPage.categories)
+    const language = useSelector(state => state.primaryPage.language)
+
     useEffect(() => {
         const urlLanguage = pathname.match(/^\/([\w]{2})|$/)
         if (urlLanguage) {
@@ -21,10 +25,12 @@ const Navbar = () => {
             }
         }
     }, [])
+
     
 
-    const categories = useSelector(state => state.primaryPage.categories)
-    const language = useSelector(state => state.primaryPage.language)
+    useEffect(() => {
+        translator.changeLanguage(currentLanguage)
+    }, [currentLanguage])
 
     const onLanguageChange = (event) => {
         translator.changeLanguage(event.target.value)

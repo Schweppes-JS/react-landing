@@ -1,34 +1,25 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useHistory } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 import { useTranslation } from 'react-i18next'
+import { launchAnimations, rollbackAnimation } from '../../../pages/primary/services/animationServices'
+import { setCurrentItem } from '../../../pages/secondary/reducers/secondaryPageReducer'
 import './Card.scss'
 
-const Card = ({info: {shortInfo}, imageAnimationDelay, headerAnimationDelay, addressAnimationDelay}) => {
+const Card = ({info: {shortInfo}, imageAnimationDelay, headerAnimationDelay, addressAnimationDelay, removeCards}) => {
 
     const { t } = useTranslation()
+    const dispatch = useDispatch()
     const history = useHistory()
+    const cardEl = useRef(null)
     const headerEl = useRef(null)
     const imageEl = useRef(null)
     const shortInfoEl = useRef(null)
 
-    const launchAnimations = (element, animationName) => {
-            if (!element.current.classList.contains(animationName)) {
-                if (element === imageEl) {
-                    if ((window.innerHeight + window.scrollY) > element.current.offsetParent.offsetTop - 20) {
-                        element.current.classList.add(animationName)
-                    }
-                } else {
-                    if ((window.innerHeight + window.scrollY) > element.current.offsetTop - 20) {
-                        element.current.classList.add(animationName)
-                    }
-                }
-            }
-    }
-
     const onScroll = () => {
-        launchAnimations(headerEl, 'slideOutLeft')
-        launchAnimations(imageEl, 'slideOutUp')
-        launchAnimations(shortInfoEl, 'slideOutLeft')
+        launchAnimations(headerEl.current, 'slideOutLeft')
+        launchAnimations(imageEl.current, 'slideOutUp')
+        launchAnimations(shortInfoEl.current, 'slideOutLeft')
     }
 
     useEffect(() => {
@@ -37,28 +28,44 @@ const Card = ({info: {shortInfo}, imageAnimationDelay, headerAnimationDelay, add
         return () => window.removeEventListener('scroll', onScroll)
     }, [])
 
-    const routeChange = () => {
-        history.push(`${history.location.pathname}/${shortInfo.header}`)
+    const onCardClick = () => {
+        cardEl.current.classList.add('current-card')
+        const cards = Array.from(cardEl.current.parentElement.children)
+        cards.forEach(card => {
+            for ( let i = 0; i < card.children.length; i++) {
+                i === 0 && rollbackAnimation(card.children[i], 'slideBackRight')
+                i === 1 && rollbackAnimation(card.children[i].children[0], 'slideBackDown')
+                i === 2 && rollbackAnimation(card.children[i], 'slideBackRight')
+            }
+        })
+        dispatch(setCurrentItem(shortInfo))
+        const currentCard = cards.filter(card => card.classList.contains('current-card'))
+        currentCard.classList.add('scaling')
+        setTimeout(() => {
+            cards.filter(card => !card.classList.contains('current-card')).map(card => card.remove())
+            // const pageUrl = t(shortInfo.header.toLowerCase().replaceAll(' ', '-'))
+            // history.push(`${history.location.pathname}/${pageUrl}`)
+        }, 1600)
     }
 
     return (
-        <div className='card'>
+        <div className='card' ref={cardEl}>
             <h2 className={`card__header ${headerAnimationDelay}`} ref={headerEl}>
                 {t(shortInfo.header)}
             </h2>
-            <div className='card__image-container' onClick={routeChange} >
-                <img className={`card__image ${imageAnimationDelay}`} src={shortInfo.image} ref={imageEl}/>
-                <div className='card__image-overlay'>
-                    <p className='card__status-info'>
-                        <span>{t('commissioning date')}</span>
-                        <span>{`${shortInfo.cadence.quater} ${t('quater')} ${shortInfo.cadence.year}`}</span>
-                    </p>
-                    <p  className='card__status-info'>
-                        <span>{t('status')}</span>
-                        <span>{shortInfo.onSale ? `${t('on sale')}` : `${t('expected soon')}`}</span>
-                    </p>
+                <div className='card__image-container' onClick={onCardClick}>
+                    <img className={`card__image ${imageAnimationDelay}`} src={shortInfo.image} ref={imageEl}/>
+                    <div className='card__image-overlay'>
+                        <p className='card__status-info'>
+                            <span>{t('commissioning date')}</span>
+                            <span>{`${shortInfo.cadence.quater} ${t('quater')} ${shortInfo.cadence.year}`}</span>
+                        </p>
+                        <p  className='card__status-info'>
+                            <span>{t('status')}</span>
+                            <span>{shortInfo.onSale ? `${t('on sale')}` : `${t('expected soon')}`}</span>
+                        </p>
+                    </div>
                 </div>
-            </div>
             <div className={`card__short-info ${addressAnimationDelay}`} ref={shortInfoEl}>
                 <h3 className='card__architect'>
                     {t('Architects')}: <br/>
