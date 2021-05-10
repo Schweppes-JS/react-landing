@@ -41,6 +41,7 @@
   
 .slideBackDown {
     animation-name: slideBackDown;
+    animation-duration: 1s;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
 }
@@ -53,6 +54,22 @@
     100% {
         transform: translateY(100%);
         opacity: 0;
+    }
+}
+
+.slideDown {
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
     }
 }
 
@@ -94,10 +111,6 @@
         transform: translateX(100%);
         opacity: 0;
     }
-}
-
-.scaling {
-    
 }
 
 .delay00 {

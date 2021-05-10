@@ -18,23 +18,25 @@ const PrimaryPage = () => {
 
     const isLoading = useSelector(state => state.primaryPage.isLoading)
     const categories = useSelector(state => state.primaryPage.categories)
+    const currentLanguage = useSelector(state => state.primaryPage.language)
+    console.log(currentLanguage)
 
     return (
         <>
             {isLoading ?  
                 <Loader /> :
                 <div className='container'>
-                    <Navbar />
+                    <Navbar currentLanguage={currentLanguage}/>
                     <Switch>
                         <Redirect exact from='/' to='/living-complex'/>
                         {categories.map(category =>
                             <Route key={category.url} exact path={`/:language?/${category.url}`} render={() =>
                                 <Content category={category}/>} />
                         )}
-                        {/* {categories.map(category =>
+                        {categories.map(category =>
                             <Route key={category.url} exact path={`/:language?/${category.url}/:item?`} render={() =>
                                 <SecondaryPage />} />
-                        )} */}
+                        )}
                         <Route path='*' render={() => <ErrorPage />}/>
                     </Switch>
                 </div>

@@ -1376,5 +1376,59 @@
         }
       } 
     }
-  ]
+  ],
+  "items": {
+    "living-complex": {
+      "residental-complex": {
+        "header": "residental complex",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://www.arch2o.com/wp-content/uploads/2020/09/Arch2O-charlie-living-residential-complex-graft-27.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 3,
+          "year": 2021
+        }
+      }
+    },
+    "commerce": {
+      "ella-logistics-center": {
+        "header": "Ella Logistics Center",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://images.adsttc.com/media/images/53b2/08ab/c07a/80eb/1c00/01f2/large_jpg/1.jpg?1404176523",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2022
+        }
+      }
+    },
+    "business-center": {
+      "atlas-building": {
+        "header": "Atlas Building",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://files.proact-group.com/images/uploads/0309_0000_1565854717.jpg",
+        "onSale": true,
+        "cadence": {
+          "quater": 2,
+          "year": 2021
+        }
+      }
+    },
+    "shopping-center": {
+      "burlington": {
+        "header": "Burlington",
+        "architect": "Alison Brooks",
+        "address": "11 Stable Street, KingCross",
+        "image": "https://content.fortune.com/wp-content/uploads/2019/11/Burlington-Mall-Massachusetts-Rendering.jpg",
+        "onSale": false,
+        "cadence": {
+          "quater": 1,
+          "year": 2023
+        }
+      }
+    }
+  }
 }

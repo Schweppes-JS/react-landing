@@ -3,10 +3,9 @@ import { useHistory } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import { launchAnimations, rollbackAnimation } from '../../../pages/primary/services/animationServices'
-import { setCurrentItem } from '../../../pages/secondary/reducers/secondaryPageReducer'
 import './Card.scss'
 
-const Card = ({info: {shortInfo}, imageAnimationDelay, headerAnimationDelay, addressAnimationDelay, removeCards}) => {
+const Card = ({info: {shortInfo}, imageAnimationDelay, headerAnimationDelay, addressAnimationDelay}) => {
 
     const { t } = useTranslation()
     const dispatch = useDispatch()
@@ -17,9 +16,9 @@ const Card = ({info: {shortInfo}, imageAnimationDelay, headerAnimationDelay, add
     const shortInfoEl = useRef(null)
 
     const onScroll = () => {
-        launchAnimations(headerEl.current, 'slideOutLeft')
-        launchAnimations(imageEl.current, 'slideOutUp')
-        launchAnimations(shortInfoEl.current, 'slideOutLeft')
+        headerEl.current && launchAnimations(headerEl.current, 'slideOutLeft')
+        imageEl.current && launchAnimations(imageEl.current, 'slideOutUp')
+        shortInfoEl.current && launchAnimations(shortInfoEl.current, 'slideOutLeft')
     }
 
     useEffect(() => {
@@ -29,22 +28,22 @@ const Card = ({info: {shortInfo}, imageAnimationDelay, headerAnimationDelay, add
     }, [])
 
     const onCardClick = () => {
-        cardEl.current.classList.add('current-card')
         const cards = Array.from(cardEl.current.parentElement.children)
         cards.forEach(card => {
             for ( let i = 0; i < card.children.length; i++) {
-                i === 0 && rollbackAnimation(card.children[i], 'slideBackRight')
-                i === 1 && rollbackAnimation(card.children[i].children[0], 'slideBackDown')
-                i === 2 && rollbackAnimation(card.children[i], 'slideBackRight')
+                if (i === 0) {
+                    rollbackAnimation(card.children[i], 'slideBackRight')
+                } else if (i === 1) {
+                    rollbackAnimation(card.children[i].children[1], 'slideDown')
+                    rollbackAnimation(card.children[i].children[0], 'slideBackDown')
+                } else {
+                    rollbackAnimation(card.children[i], 'slideBackRight')
+                }
             }
         })
-        dispatch(setCurrentItem(shortInfo))
-        const currentCard = cards.filter(card => card.classList.contains('current-card'))
-        currentCard.classList.add('scaling')
         setTimeout(() => {
-            cards.filter(card => !card.classList.contains('current-card')).map(card => card.remove())
-            // const pageUrl = t(shortInfo.header.toLowerCase().replaceAll(' ', '-'))
-            // history.push(`${history.location.pathname}/${pageUrl}`)
+            const pageUrl = t(shortInfo.header.toLowerCase().replaceAll(' ', '-'))
+            history.push(`${history.location.pathname}/${pageUrl}`)
         }, 1600)
     }
 

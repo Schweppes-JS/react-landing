@@ -9,7 +9,7 @@ const SET_LANGUAGE = 'SET_LANGUAGE'
 const initialState = {
     categories: null,
     currentCategory: null,
-    language: 'UA',
+    language: null,
     isLoading: true,
     uploadAmount: {},
     backendError: ''
@@ -76,9 +76,9 @@ export default function primaryPageReducer(state = initialState, action) {
 }
 
 export const setCategoriesSuccess = (categories) => ({type: SET_CATEGORIES_SUCCESS, payload: categories})
-export const setCategoriesFailure = () => ({type: SET_CATEGORIES_FAILURE})
+export const setCategoriesFailure = (error) => ({type: SET_CATEGORIES_FAILURE, payload: error})
 export const setCurrentCategory = (category) => ({type: SET_CURRENT_CATEGORY, payload: category})
 export const setMoreItemsSuccess = (index, items) => ({type: SET_MORE_ITEMS_SUCCESS, payload: {index, items}})
-export const setMoreItemsFailure = () => ({type: SET_MORE_ITEMS_FAILURE})
+export const setMoreItemsFailure = (error) => ({type: SET_MORE_ITEMS_FAILURE, payload: error})
 export const setUploadAmount = (currentCategory) => ({type: SET_UPLOAD_AMOUNT, payload: currentCategory})
 export const setLanguage = (language) => ({type: SET_LANGUAGE, payload: language})
