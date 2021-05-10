@@ -2,6 +2,7 @@
     font-family: 'Halvar Breitschrift';
     src: url('./assets/fonts/HalvarBreit-Lt.ttf');
 }
+@import './styles/variable';
 
 .body {
     margin: 0;
@@ -11,16 +12,48 @@
     display: flex;
     justify-content: center;
     font-family: 'Halvar Breitschrift';
-    overflow-x: hidden;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 #root {
     width: 1280px;
-    margin: 0 15px;
     display: flex;
     justify-content: center;
     min-height: 100%;
     height: 100%;
     height: auto; 
+}
+
+.light-theme {
+    color: $translucent-white;
+
+
+    &__active-link {
+        color: $white;
+    }
+
+    &__select {
+        color: $white !important;
+
+        option {
+            color: $black;
+        }
+    }
+}
+
+.dark-theme {
+    color: $translucent-black;
+
+    &__active-link {
+        color: $black;
+    }
+
+    &__select {
+        color: $black;
+
+        option {
+            color: $white;
+        }
+    }
 }

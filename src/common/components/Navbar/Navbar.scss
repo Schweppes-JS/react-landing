@@ -3,6 +3,8 @@
 .navbar {
     display: flex;
     justify-content: flex-end;
+    padding: 0 15px;
+    z-index: 1;
 
     &__list {
         display: flex;
@@ -23,21 +25,16 @@
 
     &__link {
         text-decoration: none;
-        color: $translucent-black;
         font-weight: 700;
-    }
-
-    &__active-link {
-        color: $black;
     }
 
     &__select-block {
         text-transform: uppercase;
         font-weight: 700;
+        cursor: pointer;
     }
 
     option {
-        color: $translucent-black;
         font-weight: 700;
     }
 

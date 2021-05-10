@@ -1,5 +1,6 @@
 const SET_ITEM_SUCCESS = 'SET_ITEM_SUCCESS'
 const SET_ITEM_FAILURE = 'SET_ITEM_FAILURE'
+const CLEAR__STATE = 'CLEAR__STATE'
 
 const initialState = {
     currentItem: null,
@@ -10,7 +11,6 @@ const initialState = {
 export default function secondaryPageReducer(state = initialState, action) {
     switch(action.type) {
         case SET_ITEM_SUCCESS:
-            console.log(action.payload)
             return {
                 ...state,
                 isLoading: false,
@@ -22,6 +22,10 @@ export default function secondaryPageReducer(state = initialState, action) {
                 isLoading: false,
                 currentItem: action.payload
             }
+        case CLEAR__STATE:
+            return {
+                ...initialState
+            };
         default:
             return state;
     }
@@ -29,3 +33,4 @@ export default function secondaryPageReducer(state = initialState, action) {
 
 export const setItemSuccess = (item) => ({type: SET_ITEM_SUCCESS, payload: item})
 export const setItemFailure = (error) => ({type: SET_ITEM_FAILURE, payload: error})
+export const clearState = () => ({type: CLEAR__STATE})

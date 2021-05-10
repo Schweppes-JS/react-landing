@@ -1,0 +1,22 @@
+.characteristic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    background-color: #474787;;
+    z-index: 1;
+    padding: 15px;
+
+    &__amount {
+        margin: 0;
+        font-size: 30px;
+    }
+
+    &__title {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 14px;
+        text-align: center;
+    }
+}

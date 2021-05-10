@@ -13,7 +13,7 @@
         opacity: 1;
     }
 
-    &__image-container {
+    &__image-wrapper {
         position: relative;
         height: 440px;
         width: 100%;
@@ -94,7 +94,7 @@
             margin-bottom: 20px;
         }
 
-        .card__image-container {
+        .card__image-wrapper {
             display: flex;
             order: 0;
             position: relative;

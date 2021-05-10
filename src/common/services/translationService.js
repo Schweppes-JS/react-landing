@@ -12,7 +12,7 @@ const translationsEn = {
     'expected soon': 'expected soon',
     'Architects': 'Architects',
     'Upload more': 'Upload more',
-    'residental complex': 'residental-complex',
+    'residental complex': 'residental complex',
     'rezidenncija': 'residental-complex',
     'rezydenciya': 'residental-complex',
     'Alison Brooks': 'Alison Brooks',
@@ -29,7 +29,14 @@ const translationsEn = {
     'atlas': 'atlas-building',
     'burlington': 'burlington',
     'berlington': 'burlington',
-    'berlinhton': 'burlington'
+    'berlinhton': 'burlington',
+    'Description of': 'Description of',
+    'main stones': 'Main stones',
+    'hour concierge': 'hour concierge',
+    'acres of public realm': 'acres of public realm',
+    'swimming pool overlooking the South Dock': 'swimming pool overlooking the South Dock',
+    'high spec bathroom': 'high spec bathroom',
+    'homes': 'homes'
 }
 
 const translationsUa = {
@@ -58,6 +65,13 @@ const translationsUa = {
     'atlas': 'atlas-bud',
     'berlington': 'berlinhton',
     'burlington': 'berlinhton',
+    'Description of': 'Опис',
+    'main stones': 'Головні переваги',
+    'hour concierge': "цілодобовий консьєрж",
+    'acres of public realm': 'акрів громадського простору',
+    'swimming pool overlooking the South Dock': 'басейн з видом на Південний Док',
+    'high spec bathroom': 'ванна кімната з високими технічними характеристиками',
+    'homes': 'будинків'
 }
 
 const translationsRu = {
@@ -85,7 +99,14 @@ const translationsRu = {
     'atlas-bud': 'atlas',
     'atlas': 'atlas-building',
     'burlington': 'berlington',
-    'berlinhton': 'berlington'
+    'berlinhton': 'berlington',
+    'Description of': 'Описание',
+    'main stones': 'Главные преимущества',
+    'hour concierge': "круглосуточный консьерж",
+    'acres of public realm': 'акры публичного пространства',
+    'swimming pool overlooking the South Dock': 'бассейн с видом на Южный Док',
+    'high spec bathroom': 'ванная комната с высокими техническими характеристиками',
+    'homes': 'домов'
 }
 
 i18n

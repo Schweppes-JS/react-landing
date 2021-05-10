@@ -6,10 +6,11 @@ import Uploader from '../Uploader/Uploader'
 import { setCurrentCategory } from '../../reducers/primaryPageReducer';
 import './Content.scss'
 
-const Content = ({category}) => {
+const Content = ({category, setLightTheme}) => {
 
     const dispatch = useDispatch();
     useEffect(() => {
+        setLightTheme(false);
         dispatch(setCurrentCategory(category.url))
     }, [])
 

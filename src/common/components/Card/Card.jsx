@@ -52,7 +52,7 @@ const Card = ({info: {shortInfo}, imageAnimationDelay, headerAnimationDelay, add
             <h2 className={`card__header ${headerAnimationDelay}`} ref={headerEl}>
                 {t(shortInfo.header)}
             </h2>
-                <div className='card__image-container' onClick={onCardClick}>
+                <div className='card__image-wrapper' onClick={onCardClick}>
                     <img className={`card__image ${imageAnimationDelay}`} src={shortInfo.image} ref={imageEl}/>
                     <div className='card__image-overlay'>
                         <p className='card__status-info'>
