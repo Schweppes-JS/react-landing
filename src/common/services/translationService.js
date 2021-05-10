@@ -36,7 +36,9 @@ const translationsEn = {
     'acres of public realm': 'acres of public realm',
     'swimming pool overlooking the South Dock': 'swimming pool overlooking the South Dock',
     'high spec bathroom': 'high spec bathroom',
-    'homes': 'homes'
+    'homes': 'homes',
+    'population': 'population',
+    'See all': 'See all'
 }
 
 const translationsUa = {
@@ -71,7 +73,9 @@ const translationsUa = {
     'acres of public realm': 'акрів громадського простору',
     'swimming pool overlooking the South Dock': 'басейн з видом на Південний Док',
     'high spec bathroom': 'ванна кімната з високими технічними характеристиками',
-    'homes': 'будинків'
+    'homes': 'будинків',
+    'population': 'населення',
+    'See all': 'переглянути всі'
 }
 
 const translationsRu = {
@@ -106,7 +110,9 @@ const translationsRu = {
     'acres of public realm': 'акры публичного пространства',
     'swimming pool overlooking the South Dock': 'бассейн с видом на Южный Док',
     'high spec bathroom': 'ванная комната с высокими техническими характеристиками',
-    'homes': 'домов'
+    'homes': 'домов',
+    'population': 'население',
+    'See all': 'просмотреть все'
 }
 
 i18n

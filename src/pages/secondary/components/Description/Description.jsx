@@ -9,11 +9,12 @@ const Description = ({name, image, info }) => {
     return (
         <div className='description'>
             <div className='description__text-wrapper'>
-                <h2>{t('Description of')}&#160;<span className='description__headline'>{t(name)}</span></h2>
-                <p>{info}</p>
+                <h2 className='slideOutRight delay04'>{t('Description of')}&#160;<span className='description__headline'>{t(name)}</span></h2>
+                <p className='description__info slideOutRight delay08'>{info}</p>
             </div>
             <div className='description__image-wrapper'>
-                <img className='description__image'src={image} />
+                <img className='description__image obscuration delay08'src={image} />
+                <div className='description__overlay scaling'></div>
             </div>
         </div>
     )

@@ -1,3 +1,6 @@
+@import '../../../../styles/variable';
+@import '../../../../styles/animations';
+
 .description {
     display: flex;
     margin: 90px 0;
@@ -17,6 +20,7 @@
     }
 
     &__image-wrapper {
+        position: relative;
         height: 590px;
     }
 
@@ -24,5 +28,17 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $translucent-black;
+    }
+
+    &__info {
+        line-height: 25px;
     }
 }

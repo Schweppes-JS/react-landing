@@ -4,14 +4,13 @@ import './Benefits.scss'
 import Characteristic from '../Сharacteristic/Characteristic'
 
 const Benefits = ({ characteristic }) => {
-    console.log(characteristic)
 
     const { t } = useTranslation()
 
     return (
         <div className='benefits'>
-            <h2 className='benefits__headline'>{t('main stones')}</h2>
-            <div className="benefits__characteristic-wrapper">
+            <h2 className='benefits__headline slideOutDown delay04'>{t('main stones')}</h2>
+            <div className="benefits__characteristic-wrapper obscuration">
                 <div className="benefits__overlay">
                     {Array.from(Array(6).keys()).map((key) => <div key={key} className='overlay__blank'></div>)}
                 </div>

@@ -9,10 +9,14 @@ import './SecondaryPage.scss'
 import Description from './Description/Description'
 import Benefits from './Benefits/Benefits'
 import Gallery from './Gallery/Gallery'
+import { useTranslation } from 'react-i18next'
+import { useHistory } from 'react-router-dom'
 
 const SecondaryPage = ({setLightTheme}) => {
 
     const dispatch = useDispatch()
+    const { t } = useTranslation()
+    const history = useHistory()
     const { params } = useRouteMatch('/:language?/:category/:item')
     const isLoading = useSelector(state => state.secondaryPage.isLoading)
     const currentItem = useSelector(state => state.secondaryPage.currentItem)
@@ -30,15 +34,23 @@ const SecondaryPage = ({setLightTheme}) => {
         }
     }, [])
 
+    const redirect = () => {
+        history.push(`/${params.language}/${params.category}`)
+    }
+
     return (
         <>
         {isLoading ? 
             <Loader /> : 
             <div className='presentation'>
                 <div className="presentation__image-wrapper">
-                    <img className="presentation__image" src={currentItem.image} />
-                    
-                    <button>See all</button>
+                    <img className="presentation__image obscuration" src={currentItem.image} />
+                    <div className="presentation__overlay scaling"></div>
+                    <div className="presentation__text-wrapper">
+                        <p className="presentation__architect slideOutLeft delay04">{`${t('Architects')}: ${t(currentItem.architect)}`}</p>
+                        <h1 className="presentation__header slideOutLeft delay08">{t(currentItem.header)}</h1>
+                        <button className="presentation__button slideOutUp delay12" onClick={redirect}>{t('See all')}</button>
+                    </div>
                 </div>
                 <Description name={currentItem.header} image={currentItem.photo} info={currentItem.description}/>
                 <Benefits characteristic={currentItem.benefits}/>
