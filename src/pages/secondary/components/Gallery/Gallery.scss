@@ -1,7 +1,107 @@
+@import '../../../../styles/variable';
+
 .gallery {
     height: 760px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    padding: 90px 60px;
+    box-sizing: border-box;
+
+    &__headline {
+        margin: 0 0 25px 0;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+        height: 44px;
+        font-size: 30px;
+    }
+
+    &__date-slider {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        z-index: 0;
+        padding: 0 30px;
+
+        .slick-slider {
+            height: 100%;
+        }
+
+        .slick-arrow {
+            display: none !important;
+        }
+
+        .slick-prev:before {
+            color: black;
+        }
+
+        .slick-next:before {
+            color: black;
+        }
+
+        .slick-list {
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: none;
+        }
+
+        .slick-track {
+            height: 100%;
+            z-index: 1;
+            border-bottom: 1px solid $translucent-black;
+            box-sizing: border-box;
+        }
+
+        .slick-slide {
+            height: 100%;
+            display: flex !important;
+            justify-content: center;
+            cursor: pointer;
+
+            div {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .slick-current {
+            border-bottom: 1px solid $black;
+            pointer-events: none;
+
+            div {
+                
+                p {
+                    color: $black;
+                }
+            }
+        }
+
+        .slick-disabled {
+            display: none !important;
+        }
+
+        .custom-button {
+            z-index: 10;
+        }
+    }
+
+    &__date {
+        margin: 0;
+        height: 100%;
+        display: inline-flex !important;
+        align-items: center;
+        color: $translucent-black;
+    }
+
+    &__image-slider {
+        position: relative;
+        width: 1280px;
+        flex: 1;
+        padding: 55px 0 100px 0;
+        display: flex;
+        justify-content: center;
+    }
 }

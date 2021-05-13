@@ -3,6 +3,8 @@
     src: url('./assets/fonts/HalvarBreit-Lt.ttf');
 }
 @import './styles/variable';
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
 
 .body {
     margin: 0;

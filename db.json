@@ -1417,6 +1417,146 @@
             "title": "homes"
           }
         ],
+        "gallery": {
+          "headline": "Сonstruction progress",
+          "dates": [
+            {"JAN 2021": [
+              "https://www.letsbuild.com/wp-content/uploads/2020/10/construction-progress-tracking.jpg",
+              "https://constructionblog.autodesk.com/wp-content/uploads/2020/12/1920x1080-Blog-4-1060x596.jpg",
+              "https://amgrade.com/wp-content/uploads/2020/05/image_1.png",
+              "https://dallasairphotos.com/wp-content/uploads/2014/03/Construction-shot.jpg",
+              "https://www.makmax.com/dcms_media/image/falcons.jpg",
+              "https://miro.medium.com/max/4000/1*CaH4SU3Avaikiqm0Kijm9w.png",
+              "https://himalaiphuket.com/wp-content/uploads/2019/11/2019-10_1.jpg"
+            ]},
+            {"FEB 2021": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz34y2h8-lhpu_wq70pfjLwZskMfumTTfxlw&usqp=CAU",
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEW_u0osxgjiJquhfdgUiSp2XT7mxI-YHH0w&usqp=CAU",
+              "https://rusaniv.com/wp-content/uploads/2020/11/200095900997_222026-1.jpg",
+              "https://e857802205f45d81e3f0cd2a-kaanarchitecten.netdna-ssl.com/wp-content/uploads/2020/02/NACH-HR-RGB-S1-37.jpg",
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpOLEZu-mW4EtPWoHo6SpcRW-UsNuw8TRijw&usqp=CAU",
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkvAtxtoodTYJq8w7GWFGv8yZaqS6xs9ogmw&usqp=CAU",
+              "https://i.ytimg.com/vi/Rf0IDHGJ774/maxresdefault.jpg"
+            ]},
+            {"MAR 2021": [
+              "https://www.letsbuild.com/wp-content/uploads/2020/10/construction-progress-tracking.jpg",
+              "https://constructionblog.autodesk.com/wp-content/uploads/2020/12/1920x1080-Blog-4-1060x596.jpg",
+              "https://amgrade.com/wp-content/uploads/2020/05/image_1.png",
+              "https://dallasairphotos.com/wp-content/uploads/2014/03/Construction-shot.jpg",
+              "https://www.makmax.com/dcms_media/image/falcons.jpg",
+              "https://miro.medium.com/max/4000/1*CaH4SU3Avaikiqm0Kijm9w.png",
+              "https://himalaiphuket.com/wp-content/uploads/2019/11/2019-10_1.jpg"
+            ]},
+            {"APR 2021": [
+              "https://www.letsbuild.com/wp-content/uploads/2020/10/construction-progress-tracking.jpg",
+              "https://constructionblog.autodesk.com/wp-content/uploads/2020/12/1920x1080-Blog-4-1060x596.jpg",
+              "https://amgrade.com/wp-content/uploads/2020/05/image_1.png",
+              "https://dallasairphotos.com/wp-content/uploads/2014/03/Construction-shot.jpg",
+              "https://www.makmax.com/dcms_media/image/falcons.jpg",
+              "https://miro.medium.com/max/4000/1*CaH4SU3Avaikiqm0Kijm9w.png",
+              "https://himalaiphuket.com/wp-content/uploads/2019/11/2019-10_1.jpg"
+            ]},
+            {"MAY 2021": [
+              "https://www.letsbuild.com/wp-content/uploads/2020/10/construction-progress-tracking.jpg",
+              "https://constructionblog.autodesk.com/wp-content/uploads/2020/12/1920x1080-Blog-4-1060x596.jpg",
+              "https://amgrade.com/wp-content/uploads/2020/05/image_1.png",
+              "https://dallasairphotos.com/wp-content/uploads/2014/03/Construction-shot.jpg",
+              "https://www.makmax.com/dcms_media/image/falcons.jpg",
+              "https://miro.medium.com/max/4000/1*CaH4SU3Avaikiqm0Kijm9w.png",
+              "https://himalaiphuket.com/wp-content/uploads/2019/11/2019-10_1.jpg"
+            ]},
+            {"JUN 2021": [
+              "https://www.letsbuild.com/wp-content/uploads/2020/10/construction-progress-tracking.jpg",
+              "https://constructionblog.autodesk.com/wp-content/uploads/2020/12/1920x1080-Blog-4-1060x596.jpg",
+              "https://amgrade.com/wp-content/uploads/2020/05/image_1.png",
+              "https://dallasairphotos.com/wp-content/uploads/2014/03/Construction-shot.jpg",
+              "https://www.makmax.com/dcms_media/image/falcons.jpg",
+              "https://miro.medium.com/max/4000/1*CaH4SU3Avaikiqm0Kijm9w.png",
+              "https://himalaiphuket.com/wp-content/uploads/2019/11/2019-10_1.jpg"
+            ]},
+            {"JUL 2021": [
+              "https://www.letsbuild.com/wp-content/uploads/2020/10/construction-progress-tracking.jpg",
+              "https://constructionblog.autodesk.com/wp-content/uploads/2020/12/1920x1080-Blog-4-1060x596.jpg",
+              "https://amgrade.com/wp-content/uploads/2020/05/image_1.png",
+              "https://dallasairphotos.com/wp-content/uploads/2014/03/Construction-shot.jpg",
+              "https://www.makmax.com/dcms_media/image/falcons.jpg",
+              "https://miro.medium.com/max/4000/1*CaH4SU3Avaikiqm0Kijm9w.png",
+              "https://himalaiphuket.com/wp-content/uploads/2019/11/2019-10_1.jpg"
+            ]},
+            {"AUG 2021": [
+              "https://www.letsbuild.com/wp-content/uploads/2020/10/construction-progress-tracking.jpg",
+              "https://constructionblog.autodesk.com/wp-content/uploads/2020/12/1920x1080-Blog-4-1060x596.jpg",
+              "https://amgrade.com/wp-content/uploads/2020/05/image_1.png",
+              "https://dallasairphotos.com/wp-content/uploads/2014/03/Construction-shot.jpg",
+              "https://www.makmax.com/dcms_media/image/falcons.jpg",
+              "https://miro.medium.com/max/4000/1*CaH4SU3Avaikiqm0Kijm9w.png",
+              "https://himalaiphuket.com/wp-content/uploads/2019/11/2019-10_1.jpg"
+            ]},
+            {"SEP 2021": [
+              "https://www.letsbuild.com/wp-content/uploads/2020/10/construction-progress-tracking.jpg",
+              "https://constructionblog.autodesk.com/wp-content/uploads/2020/12/1920x1080-Blog-4-1060x596.jpg",
+              "https://amgrade.com/wp-content/uploads/2020/05/image_1.png",
+              "https://dallasairphotos.com/wp-content/uploads/2014/03/Construction-shot.jpg",
+              "https://www.makmax.com/dcms_media/image/falcons.jpg",
+              "https://miro.medium.com/max/4000/1*CaH4SU3Avaikiqm0Kijm9w.png",
+              "https://himalaiphuket.com/wp-content/uploads/2019/11/2019-10_1.jpg"
+            ]},
+            {"OCT 2021": [
+              "https://www.letsbuild.com/wp-content/uploads/2020/10/construction-progress-tracking.jpg",
+              "https://constructionblog.autodesk.com/wp-content/uploads/2020/12/1920x1080-Blog-4-1060x596.jpg",
+              "https://amgrade.com/wp-content/uploads/2020/05/image_1.png",
+              "https://dallasairphotos.com/wp-content/uploads/2014/03/Construction-shot.jpg",
+              "https://www.makmax.com/dcms_media/image/falcons.jpg",
+              "https://miro.medium.com/max/4000/1*CaH4SU3Avaikiqm0Kijm9w.png",
+              "https://himalaiphuket.com/wp-content/uploads/2019/11/2019-10_1.jpg"
+            ]},
+            {"NOV 2021": [
+              "https://www.letsbuild.com/wp-content/uploads/2020/10/construction-progress-tracking.jpg",
+              "https://constructionblog.autodesk.com/wp-content/uploads/2020/12/1920x1080-Blog-4-1060x596.jpg",
+              "https://amgrade.com/wp-content/uploads/2020/05/image_1.png",
+              "https://dallasairphotos.com/wp-content/uploads/2014/03/Construction-shot.jpg",
+              "https://www.makmax.com/dcms_media/image/falcons.jpg",
+              "https://miro.medium.com/max/4000/1*CaH4SU3Avaikiqm0Kijm9w.png",
+              "https://himalaiphuket.com/wp-content/uploads/2019/11/2019-10_1.jpg"
+            ]},
+            {"DEC 2021": [
+              "https://www.letsbuild.com/wp-content/uploads/2020/10/construction-progress-tracking.jpg",
+              "https://constructionblog.autodesk.com/wp-content/uploads/2020/12/1920x1080-Blog-4-1060x596.jpg",
+              "https://amgrade.com/wp-content/uploads/2020/05/image_1.png",
+              "https://dallasairphotos.com/wp-content/uploads/2014/03/Construction-shot.jpg",
+              "https://www.makmax.com/dcms_media/image/falcons.jpg",
+              "https://miro.medium.com/max/4000/1*CaH4SU3Avaikiqm0Kijm9w.png",
+              "https://himalaiphuket.com/wp-content/uploads/2019/11/2019-10_1.jpg"
+            ]},
+            {"JAN 2022": [
+              "https://www.letsbuild.com/wp-content/uploads/2020/10/construction-progress-tracking.jpg",
+              "https://constructionblog.autodesk.com/wp-content/uploads/2020/12/1920x1080-Blog-4-1060x596.jpg",
+              "https://amgrade.com/wp-content/uploads/2020/05/image_1.png",
+              "https://dallasairphotos.com/wp-content/uploads/2014/03/Construction-shot.jpg",
+              "https://www.makmax.com/dcms_media/image/falcons.jpg",
+              "https://miro.medium.com/max/4000/1*CaH4SU3Avaikiqm0Kijm9w.png",
+              "https://himalaiphuket.com/wp-content/uploads/2019/11/2019-10_1.jpg"
+            ]},
+            {"FEB 2022": [
+              "https://www.letsbuild.com/wp-content/uploads/2020/10/construction-progress-tracking.jpg",
+              "https://constructionblog.autodesk.com/wp-content/uploads/2020/12/1920x1080-Blog-4-1060x596.jpg",
+              "https://amgrade.com/wp-content/uploads/2020/05/image_1.png",
+              "https://dallasairphotos.com/wp-content/uploads/2014/03/Construction-shot.jpg",
+              "https://www.makmax.com/dcms_media/image/falcons.jpg",
+              "https://miro.medium.com/max/4000/1*CaH4SU3Avaikiqm0Kijm9w.png",
+              "https://himalaiphuket.com/wp-content/uploads/2019/11/2019-10_1.jpg"
+            ]},
+            {"MAR 2022": [
+              "https://www.letsbuild.com/wp-content/uploads/2020/10/construction-progress-tracking.jpg",
+              "https://constructionblog.autodesk.com/wp-content/uploads/2020/12/1920x1080-Blog-4-1060x596.jpg",
+              "https://amgrade.com/wp-content/uploads/2020/05/image_1.png",
+              "https://dallasairphotos.com/wp-content/uploads/2014/03/Construction-shot.jpg",
+              "https://www.makmax.com/dcms_media/image/falcons.jpg",
+              "https://miro.medium.com/max/4000/1*CaH4SU3Avaikiqm0Kijm9w.png",
+              "https://himalaiphuket.com/wp-content/uploads/2019/11/2019-10_1.jpg"
+            ]}
+          ]
+        },
         "photo": "https://images.adsttc.com/media/images/5efe/65d7/b357/6540/5400/0258/large_jpg/zr_spb_190901_Simon_Menges_17_HiRes.jpg?1593730488"
       }
     },

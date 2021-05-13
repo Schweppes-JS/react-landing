@@ -54,7 +54,7 @@ const SecondaryPage = ({setLightTheme}) => {
                 </div>
                 <Description name={currentItem.header} image={currentItem.photo} info={currentItem.description}/>
                 <Benefits characteristic={currentItem.benefits}/>
-                <Gallery />
+                {currentItem && <Gallery currentItem={currentItem}/>}
             </div>
         }
         </>

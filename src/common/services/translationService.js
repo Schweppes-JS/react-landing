@@ -38,7 +38,8 @@ const translationsEn = {
     'high spec bathroom': 'high spec bathroom',
     'homes': 'homes',
     'population': 'population',
-    'See all': 'See all'
+    'See all': 'See all',
+    'Сonstruction progress': 'Сonstruction progress'
 }
 
 const translationsUa = {
@@ -75,7 +76,8 @@ const translationsUa = {
     'high spec bathroom': 'ванна кімната з високими технічними характеристиками',
     'homes': 'будинків',
     'population': 'населення',
-    'See all': 'переглянути всі'
+    'See all': 'переглянути всі',
+    'Сonstruction progress': 'Хід будівництва'
 }
 
 const translationsRu = {
@@ -112,7 +114,8 @@ const translationsRu = {
     'high spec bathroom': 'ванная комната с высокими техническими характеристиками',
     'homes': 'домов',
     'population': 'население',
-    'See all': 'просмотреть все'
+    'See all': 'просмотреть все',
+    'Сonstruction progress': 'Ход строительства'
 }
 
 i18n
