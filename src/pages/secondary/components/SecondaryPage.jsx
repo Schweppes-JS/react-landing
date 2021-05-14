@@ -52,9 +52,17 @@ const SecondaryPage = ({setLightTheme}) => {
                         <button className="presentation__button slideOutUp delay12" onClick={redirect}>{t('See all')}</button>
                     </div>
                 </div>
-                <Description name={currentItem.header} image={currentItem.photo} info={currentItem.description}/>
-                <Benefits characteristic={currentItem.benefits}/>
-                {currentItem && <Gallery currentItem={currentItem}/>}
+                {currentItem && Object.keys(currentItem.constructor).map(section => {
+                        switch(section) {
+                            case 'description':
+                                return <Description key={section} name={currentItem.header} description={currentItem.constructor.description}/>
+                            case 'benefits':
+                                return <Benefits key={section} characteristic={currentItem.constructor.benefits}/>
+                            case 'gallery':
+                                return <Gallery key={section} gallery={currentItem.constructor.gallery}/>
+                        }
+                    }
+                )}
             </div>
         }
         </>

@@ -1,12 +1,11 @@
 @import '../../../../styles/variable';
 
 .gallery {
-    height: 760px;
+    height: 720px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 90px 60px;
     box-sizing: border-box;
 
     &__headline {
@@ -22,9 +21,17 @@
     &__date-slider {
         position: relative;
         width: 100%;
-        height: 60px;
         z-index: 0;
         padding: 0 30px;
+
+        .date-slider__date {
+            margin: 0;
+            height: 60px;
+            display: inline-flex !important;
+            align-items: center;
+            justify-content: center;
+            color: $translucent-black;
+        }
 
         .slick-slider {
             height: 100%;
@@ -88,20 +95,72 @@
         }
     }
 
-    &__date {
-        margin: 0;
-        height: 100%;
-        display: inline-flex !important;
-        align-items: center;
-        color: $translucent-black;
-    }
 
     &__image-slider {
         position: relative;
         width: 1280px;
         flex: 1;
-        padding: 55px 0 100px 0;
+        margin: 55px 0 80px 0;
         display: flex;
         justify-content: center;
+
+        .image-slider-wrapper {
+            height: 450px;
+            width: 100%;
+
+            .slick-slider {
+                height: 100%;
+            }
+
+            .slick-list {
+                height: 100%;
+            }
+
+            .slick-track {
+                height: 100%;
+            }
+
+            .slick-current {
+
+                div {
+                    margin: 0 190px;
+                }
+
+            }
+
+            .slick-slide {
+
+                div {
+                    height: 100%;
+                }
+            }
+
+            .slick-next {
+                right: 150px;
+            }
+
+            .slick-prev {
+                left: 150px;
+                z-index: 10;
+            }
+
+            .slick-prev:before {
+                color: black;
+            }
+
+            .slick-next:before {
+                color: black;
+            }
+
+            &__photo {
+                height: 90%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            &__date {
+                text-align: center;
+            }
+        }
     }
 }
