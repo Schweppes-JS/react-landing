@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { urlTransation } from '../../../common/services/translationService'
 import { useDispatch, useSelector } from 'react-redux'
 import { useRouteMatch } from 'react-router'
 import { fetchItem } from '../actions/fetchItem'
@@ -23,12 +22,12 @@ const SecondaryPage = ({setLightTheme}) => {
     const currentLanguage = useSelector(state => state.primaryPage.language)
 
     useEffect(() => {
-        currentLanguage && dispatch(fetchItem(params.category, urlTransation(params.item)))
+        currentLanguage && dispatch(fetchItem(params.category, params.item, currentLanguage))
     }, [currentLanguage])
 
     useEffect(() => {
         setLightTheme(true)
-        currentLanguage && dispatch(fetchItem(params.category, urlTransation(params.item)))
+        currentLanguage && dispatch(fetchItem(params.category, params.item, currentLanguage))
         return () => {
             dispatch(clearState())
         }
@@ -47,19 +46,30 @@ const SecondaryPage = ({setLightTheme}) => {
                     <img className="presentation__image obscuration" src={currentItem.image} />
                     <div className="presentation__overlay scaling"></div>
                     <div className="presentation__text-wrapper">
-                        <p className="presentation__architect slideOutLeft delay04">{`${t('Architects')}: ${t(currentItem.architect)}`}</p>
-                        <h1 className="presentation__header slideOutLeft delay08">{t(currentItem.header)}</h1>
+                        <p className="presentation__architect slideOutLeft delay04">{`${t('Architects')}: ${currentItem.architect[currentLanguage]}`}</p>
+                        <h1 className="presentation__header slideOutLeft delay08">{currentItem.header[currentLanguage]}</h1>
                         <button className="presentation__button slideOutUp delay12" onClick={redirect}>{t('See all')}</button>
                     </div>
                 </div>
                 {currentItem && Object.keys(currentItem.constructor).map(section => {
                         switch(section) {
                             case 'description':
-                                return <Description key={section} name={currentItem.header} description={currentItem.constructor.description}/>
+                                return <Description
+                                          key={section}
+                                          currentLanguage={currentLanguage}
+                                          name={currentItem.header[currentLanguage]}
+                                          description={currentItem.constructor.description}
+                                        />
                             case 'benefits':
-                                return <Benefits key={section} characteristic={currentItem.constructor.benefits}/>
+                                return <Benefits
+                                          key={section}
+                                          characteristic={currentItem.constructor.benefits}
+                                        />
                             case 'gallery':
-                                return <Gallery key={section} gallery={currentItem.constructor.gallery}/>
+                                return <Gallery
+                                          key={section}
+                                          gallery={currentItem.constructor.gallery}
+                                        />
                         }
                     }
                 )}

@@ -1,23 +1,26 @@
-import React, { useEffect, useRef } from 'react'
-import { unmountComponentAtNode } from 'react-dom';
-import { useDispatch } from 'react-redux'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import Card from '../../../../common/components/Card/Card'
 import Uploader from '../Uploader/Uploader'
 import { setCurrentCategory } from '../../reducers/primaryPageReducer';
+import { fetchContent } from '../../actions/fetchContent'
 import './Content.scss'
 
 const Content = ({category, setLightTheme}) => {
+
+    const content = useSelector(state => state.primaryPage.content)
 
     const dispatch = useDispatch();
     useEffect(() => {
         setLightTheme(false);
         dispatch(setCurrentCategory(category.url))
+        !content[category.url] && dispatch(fetchContent(category.url))
     }, [])
 
     return (
         <>
-            <div className='content'>
-                {category.content.map((item, index) => {
+            {content[category.url] && <div className='content'>
+                {content[category.url].map((item, index) => {
                     if (index % 4 === 0 || index === 0) {
                         return <Card key={item.id} info={item}
                             imageAnimationDelay='delay02'
@@ -40,8 +43,8 @@ const Content = ({category, setLightTheme}) => {
                             addressAnimationDelay='delay04'/>
                     }
                 })}
-            </div>
-            <Uploader />
+            </div>}
+            {content[category.url] && <Uploader />}
         </>
     )
 }

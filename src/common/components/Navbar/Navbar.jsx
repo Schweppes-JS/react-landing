@@ -15,6 +15,7 @@ const Navbar = ({currentLanguage, isLightTheme}) => {
     const history = useHistory()
     const { params } = useRouteMatch('/:language?/:category?/:item?')
     const categories = useSelector(state => state.primaryPage.categories)
+    const currentItem = useSelector(state => state.secondaryPage.currentItem)
 
     useEffect(() => {
         if (params.language) {
@@ -23,6 +24,7 @@ const Navbar = ({currentLanguage, isLightTheme}) => {
                 translator.changeLanguage(params.language)
                 !params.category && history.push(`/${params.language}/living-complex`)
             } else {
+                dispatch(setLanguage('ua'))
                 history.push(`/ua${params.category ? `/${t(params.category)}` : '/living-complex'}${params.item ? `/${t(params.item)}` : ''}`)
             }
         } else {
@@ -39,7 +41,7 @@ const Navbar = ({currentLanguage, isLightTheme}) => {
     const onLanguageChange = (event) => {
         translator.changeLanguage(event.target.value)
         dispatch(setLanguage(event.target.value))
-        history.push(`/${event.target.value.toLowerCase()}/${params.category}${params.item ? `/${t(params.item)}` : ''}`)
+        history.push(`/${event.target.value.toLowerCase()}/${params.category}${params.item ? `/${currentItem.item[event.target.value]}` : ''}`)
     }
 
     return (
@@ -55,7 +57,7 @@ const Navbar = ({currentLanguage, isLightTheme}) => {
                                                 })}
                                                     isActive={(match,location) => location.pathname.includes(category.url)}
                                                     to={`/${params.language}/${category.url}`}>
-                                                    {t(category.title)}
+                                                    {category.title[currentLanguage]}
                                                 </NavLink>
                                             </li>)}
                 <select className={classNames('navbar__select-block', {

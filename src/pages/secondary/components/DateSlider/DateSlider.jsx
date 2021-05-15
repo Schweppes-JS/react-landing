@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Slider from "react-slick";
 
-const DateSlider = ({gallery, currentDateGroup, setCurrentDateGroup}) => {
-
+const DateSlider = ({gallery, currentDateGroup, setCurrentDateGroup, currentLanguage, setCurrentDateGroupIndex}) => {
+    
     let slider;
     const [isVisibleNextArrow, setVisibilityNextArrow] = useState(false)
     const [isVisiblePrevArrow, setVisibilityPrevArrow] = useState(false)
@@ -21,11 +21,12 @@ const DateSlider = ({gallery, currentDateGroup, setCurrentDateGroup}) => {
     };
 
     const onNextClick = () => {
-        isCanClick && gallery.dates.find((dateGroup, index, array) => {
+        isCanClick && gallery.dates.find((object, index, array) => {
             setCanClick(false)
-            if (Object.keys(dateGroup)[0] === currentDateGroup) {
+            if (object.date[currentLanguage] === currentDateGroup) {
                 if (index < array.length - 2) {
-                    setCurrentDateGroup(Object.keys(array[index+1])[0])
+                    setCurrentDateGroup(array[index+1].date[currentLanguage])
+                    setCurrentDateGroupIndex(index+1)
                     setVisibilityPrevArrow(true)
                 } else {
                     setVisibilityNextArrow(false)
@@ -38,11 +39,12 @@ const DateSlider = ({gallery, currentDateGroup, setCurrentDateGroup}) => {
     }
 
     const onPrevClick = () => {
-        isCanClick && gallery.dates.find((dateGroup, index, array) => {
+        isCanClick && gallery.dates.find((object, index, array) => {
             setCanClick(false)
-            if (Object.keys(dateGroup)[0] === currentDateGroup) {
+            if (object.date[currentLanguage] === currentDateGroup) {
                 if (index > 0) {
-                    setCurrentDateGroup(Object.keys(array[index-1])[0])
+                    setCurrentDateGroup(array[index-1].date[currentLanguage])
+                    setCurrentDateGroupIndex(index-1)
                 }
                 if (index === 1) {
                     setVisibilityPrevArrow(false)
@@ -55,18 +57,21 @@ const DateSlider = ({gallery, currentDateGroup, setCurrentDateGroup}) => {
     }
 
     const onTabClick = (date) => {
-        gallery.dates.length > 10 && gallery.dates.find((dateGroup, index) => {
-            if (Object.keys(dateGroup)[0] === date) {
-                if (index > 0) {
-                    setVisibilityPrevArrow(true)
-                    setVisibilityNextArrow(true)
-                } 
-                if (index === 0) {
-                    setVisibilityPrevArrow(false)
-                } 
-                if (index === gallery.dates.length - 1) {
-                    setVisibilityNextArrow(false)
+        gallery.dates.find((object, index) => {
+            if (object.date[currentLanguage] === date) {
+                if ( gallery.dates.length > 10) {
+                    if (index > 0) {
+                        setVisibilityPrevArrow(true)
+                        setVisibilityNextArrow(true)
+                    } 
+                    if (index === 0) {
+                        setVisibilityPrevArrow(false)
+                    } 
+                    if (index === gallery.dates.length - 1) {
+                        setVisibilityNextArrow(false)
+                    }
                 }
+                setCurrentDateGroupIndex(index)
                 return true
             }
         })
@@ -76,9 +81,9 @@ const DateSlider = ({gallery, currentDateGroup, setCurrentDateGroup}) => {
     return (
         <>
             <Slider ref={c => (slider = c)} {...settings}>
-                {gallery.dates.map(dateGroup => 
-                    <p className='date-slider__date' key={Object.keys(dateGroup)[0]} onClick={() => onTabClick(Object.keys(dateGroup)[0])}>
-                        {Object.keys(dateGroup)[0]}
+                {gallery.dates.map(object => 
+                    <p className='date-slider__date' key={object.date[currentLanguage]} onClick={() => onTabClick(object.date[currentLanguage])}>
+                        {object.date[currentLanguage]}
                     </p>)}
             </Slider>
             {isVisibleNextArrow && <button className='custom-button slick-next' onClick={onNextClick}></button>}

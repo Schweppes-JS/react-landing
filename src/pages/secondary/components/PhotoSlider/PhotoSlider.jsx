@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Slider from 'react-slick'
 
-const PhotoSlider = ({dates, currentDateGroup}) => {
+const PhotoSlider = ({dates, currentDateGroup, currentLanguage, setCurrentDateGroup}) => {
 
     let slider
     const settings = {
@@ -19,7 +19,7 @@ const PhotoSlider = ({dates, currentDateGroup}) => {
         <>
             <div className='image-slider-wrapper'>
                 <Slider ref={c => (slider = c)} {...settings }>
-                        {dates.find(dateGroup => Object.keys(dateGroup)[0] === currentDateGroup)[currentDateGroup].map(photo =>
+                        {dates.find(object => object.date[currentLanguage] === currentDateGroup).images.map(photo =>
                             <Fragment key={photo[0]}>
                                 <img className='image-slider-wrapper__photo'  src={photo[0]}/>
                                 <p className='image-slider-wrapper__date'>{photo[1]}</p>

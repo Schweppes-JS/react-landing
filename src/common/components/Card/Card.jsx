@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { useHistory } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import { launchAnimations, rollbackAnimation } from '../../../pages/primary/services/animationServices'
 import './Card.scss'
@@ -8,12 +8,12 @@ import './Card.scss'
 const Card = ({info: {shortInfo}, imageAnimationDelay, headerAnimationDelay, addressAnimationDelay}) => {
 
     const { t } = useTranslation()
-    const dispatch = useDispatch()
     const history = useHistory()
     const cardEl = useRef(null)
     const headerEl = useRef(null)
     const imageEl = useRef(null)
     const shortInfoEl = useRef(null)
+    const currentLanguage = useSelector(state => state.primaryPage.language)
 
     const onScroll = () => {
         headerEl.current && launchAnimations(headerEl.current, 'slideOutLeft')
@@ -42,7 +42,7 @@ const Card = ({info: {shortInfo}, imageAnimationDelay, headerAnimationDelay, add
             }
         })
         setTimeout(() => {
-            const pageUrl = t(shortInfo.header.toLowerCase().replaceAll(' ', '-'))
+            const pageUrl = t(shortInfo.url[currentLanguage].toLowerCase().replaceAll(' ', '-'))
             history.push(`${history.location.pathname}/${pageUrl}`)
         }, 1600)
     }
@@ -50,7 +50,7 @@ const Card = ({info: {shortInfo}, imageAnimationDelay, headerAnimationDelay, add
     return (
         <div className='card' ref={cardEl}>
             <h2 className={`card__header ${headerAnimationDelay}`} ref={headerEl}>
-                {t(shortInfo.header)}
+                {shortInfo.header[currentLanguage]}
             </h2>
                 <div className='card__image-wrapper' onClick={onCardClick}>
                     <img className={`card__image ${imageAnimationDelay}`} src={shortInfo.image} ref={imageEl}/>
@@ -68,9 +68,9 @@ const Card = ({info: {shortInfo}, imageAnimationDelay, headerAnimationDelay, add
             <div className={`card__short-info ${addressAnimationDelay}`} ref={shortInfoEl}>
                 <h3 className='card__architect'>
                     {t('Architects')}: <br/>
-                    <span>{t(shortInfo.architect)}</span>
+                    <span>{shortInfo.architect[currentLanguage]}</span>
                 </h3>
-                <p className='card__address'>{t(shortInfo.address)}</p>
+                <p className='card__address'>{shortInfo.address[currentLanguage]}</p>
             </div>
         </div>
     )
