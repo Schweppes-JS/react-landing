@@ -9,10 +9,9 @@ const Uploader = () => {
     const { t } = useTranslation();
     const dispatch = useDispatch()
     const currentCategory = useSelector(state => state.primaryPage.currentCategory);
-    const currentCategoryIndex = useSelector(state => state.primaryPage.categories.findIndex(element => element.url === currentCategory))
-
+    
     const onUploadMore = () => {
-        dispatch(fetchMoreItems(currentCategoryIndex , currentCategory))
+        dispatch(fetchMoreItems(currentCategory))
     }
 
     return (

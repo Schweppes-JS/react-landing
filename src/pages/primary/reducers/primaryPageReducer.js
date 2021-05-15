@@ -56,17 +56,13 @@ export default function primaryPageReducer(state = initialState, action) {
             return {
                 ...state,
                 isLoading: false,
-                categories: [
-                    ...state.categories.slice(0, action.payload.index),
-                    {
-                        ...state.categories[action.payload.index],
-                        content: [
-                            ...state.categories[action.payload.index].content,
-                            ...action.payload.items
-                        ]
-                    },
-                    ...state.categories.slice(action.payload.index + 1),
-                ]
+                content: {
+                    ...state.content,
+                    [action.payload.category]: [
+                        ...state.content[action.payload.category],
+                        ...action.payload.items
+                    ]
+                }
             }
         case SET_MORE_ITEMS_FAILURE:
             return {
@@ -98,7 +94,7 @@ export const setCategoriesFailure = (error) => ({type: SET_CATEGORIES_FAILURE, p
 export const setCurrentCategory = (category) => ({type: SET_CURRENT_CATEGORY, payload: category})
 export const setContentSuccess = (category, content) => ({type: GET_CONTENT_SUCCESS, payload: {content, category}})
 export const setContentFailure = (error) => ({type: GET_CONTENT_FAILURE, payload: error})
-export const setMoreItemsSuccess = (index, items) => ({type: SET_MORE_ITEMS_SUCCESS, payload: {index, items}})
+export const setMoreItemsSuccess = (category, items) => ({type: SET_MORE_ITEMS_SUCCESS, payload: {category, items}})
 export const setMoreItemsFailure = (error) => ({type: SET_MORE_ITEMS_FAILURE, payload: error})
 export const setUploadAmount = (currentCategory) => ({type: SET_UPLOAD_AMOUNT, payload: currentCategory})
 export const setLanguage = (language) => ({type: SET_LANGUAGE, payload: language})
